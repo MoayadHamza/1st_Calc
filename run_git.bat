@@ -16,7 +16,7 @@ set "formattedDate=%day%-%month%-%year:~-2%"
 :: Run Git commands
 git status
 git add .
-git commit -m "2nd try"
+git commit -m "3rd try"
 git push -u origin main
 
 endlocal
