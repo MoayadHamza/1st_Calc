@@ -3,13 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rami's Calculator</title>
 </head>
+
+<style>
+    body {
+        background-color: #9c272770;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .title {
+        color: #eba000;
+        margin: 20px auto;
+    }
+
+    .container {
+        justify-content: center;
+        width: 216px;
+    }
+
+    .btn-container {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .floating-btn {
+        width: 48px;
+        height: 48px;
+        margin: 2px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        background-color: #555;
+        font-weight: bold;
+        color: #eee;
+        transition: background-color 0.3s;
+        float:left;
+    }
+
+    .floating-btn:hover {
+        background-color: #eba000;
+    }
+
+    #display {
+        height: 40px;
+        width: 199;
+        margin: 2px 2px;
+        border-radius: 4px;
+        background-color: #9c9c9c;
+        font-weight: bold;
+        font-size: 16px;
+        color: #333;
+    }
+
+    .emp-btn {
+        width: 48px;
+        height: 48px;
+        margin: 2px 2px;
+        color: #ccc;
+    }
+
+    .card {
+        color: #eee;
+        margin: 50px;
+        background-color: #eba000;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 100vh;
+    }
+
+    .card:hover {
+        opacity: 0.9;
+    }
+</style>
+
 <body>
-    <div>
-        <h1>
-            test
-        </h1>
+    <div class="dad">
+        <div class="container">
+            <div class="title">
+                <h1>Calculator</h1>
+            </div>
+
+            <input type="text" placeholder="result" id="display" disabled>
+            <br>
+
+            <div class="btn-container">
+                <div class="floating-btn" id="btn-1">1</div>
+                <div class="floating-btn" id="btn-2">2</div>
+                <div class="floating-btn" id="btn-3">3</div>
+                <div class="floating-btn" id="btn-plus">+</div>
+                <div class="floating-btn" id="btn-1">4</div>
+                <div class="floating-btn" id="btn-2">5</div>
+                <div class="floating-btn" id="btn-3">6</div>
+                <div class="floating-btn" id="btn-plus">-</div>
+                <div class="floating-btn" id="btn-1">7</div>
+                <div class="floating-btn" id="btn-2">8</div>
+                <div class="floating-btn" id="btn-3">9</div>
+                <div class="floating-btn" id="btn-plus">*</div>
+                <div class="floating-btn" id="btn-1">C</div>
+                <div class="floating-btn" id="btn-2">0</div>
+                <div class="floating-btn" id="btn-3">/</div>
+                <div class="floating-btn" id="btn-plus">=</div>
+    
+            </div>
+
+
+        </div>
+
+        <div class="card">
+            <h2>Project Description</h2>
+            <p>This is a simple calculator. Feel free to try it!</p>
+            <p>Created By: Rami Amasha</p>
+        </div>
     </div>
+
+    <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }        
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
 </body>
 </html>

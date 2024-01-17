@@ -12,5 +12,5 @@ formattedDate=$(date +"%d-%m-%y")
 # Run Git commands
 git status
 git add .
-git commit -m "$formattedDate"
+git commit -m "2nd try"
 git push -u origin main
